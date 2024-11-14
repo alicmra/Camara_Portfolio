@@ -6,6 +6,7 @@
 
 body{
     background: black;
+    color: white;
 }
 
 .header{
@@ -14,23 +15,35 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     z-index: 100;
 }
 
 .logo{
-    font-size: 35px;
-    color: white;
+    font-size: 40px;
+    color:white;
     text-decoration: none;
     font-weight: 600;
 }
-.navbar {
-    display: flex;
-    justify-content: center; 
-    gap: 70px;
-    flex-grow: 1; 
+
+.logo span{
+    color: orange;
 }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    transition: 0.3s;
+    flex-grow: 1;
+}
+
+.navbar li{
+    list-style: none;
+}
+
 .navbar a{
     font-size: 25px;
     color: white ;
@@ -40,6 +53,91 @@ body{
     transition: .3s;
 }
 
-.navbar a:hover{
-    color: orange;
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+navbar a:hover{
+    color: white; 
+}
+
+.navbar:hover a:not(:hover){
+    color: grey; 
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.home-content h1{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    font-size: 35px;
+    font-size: 700;
+}
+
+@media (max-width: 768px){
+
+     .hamburger{
+        display: block;
+     }
+    
+     .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .navbar{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navbar.active{
+        left: 0; 
+    }
+        
+    .home-content h1{
+        font-size: 4rem;
+    }
+
+    .home-content h3{
+         font-size: 1.8rem;
+    }
 }
