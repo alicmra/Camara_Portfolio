@@ -29,7 +29,7 @@ body{
 }
 
 .logo span{
-    color: #FF7F11;
+    color: rgb(4, 110, 4);
 }
 
 .navbar{
@@ -38,6 +38,10 @@ body{
     gap: 70px;
     transition: 0.3s;
     flex-grow: 1;
+}
+
+.nav-menu{
+    padding: 10px;
 }
 
 .navbar li{
@@ -51,6 +55,10 @@ body{
     justify-content: center;
     font-weight: 500;
     transition: .3s;
+}
+
+.navbar a:hover {
+    color:rgb(4, 110, 4); 
 }
 
 .hamburger{
@@ -67,15 +75,15 @@ body{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-.navbar a:hover{
-    color: white; 
+
+section{
+    padding: 100px;
+    min-height: 100vh;
+    color: white;
 }
 
-.navbar:hover a:not(:hover){
-    color: grey; 
-}
 
-.home{
+#home{
     position: relative;
     height: 100vh; 
     display: flex;
@@ -89,8 +97,8 @@ body{
     position: relative;
 }
 
-.home::before{
-    background-image: url('home.JPG'); 
+#home::before{
+    background-image: url('.jpg'); 
     background-size: cover;
     content: '';
     position: absolute;
@@ -111,6 +119,64 @@ body{
     isolation: isolate;
 }
 
+#skills {
+    padding: 100px ;
+    text-align: center;
+
+}
+
+#skills h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    top: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #1c1b1b;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    height: 280px;
+    border: 1px solid #3a3a3a;
+    text-align: left;
+    color: white;
+}
+
+.skill-card h2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: white; 
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(199, 61, 61);
+
+    
+}
+
+
+.skill-card h3 {
+    font-family: Arial;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+.skill-card i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    float: left;
+    margin-right: 20px;
+}
 
 @media (max-width: 768px){
 
@@ -142,7 +208,9 @@ body{
         align-items: center;
         transition: right 0.3s ease-in-out;
         border-left: 3px solid #fffdd0;
+        
     }
+
 
     .nav-item{
         margin: 16px 0;
@@ -158,5 +226,25 @@ body{
 
     .home-content h3{
          font-size: 1.5rem;
+    }
+
+    #skills h1 {
+        font-size: 3rem;
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill-card h3 {
+        font-size: 0.9rem;
     }
 }
