@@ -84,11 +84,18 @@ body{
     background-color: white;
 }
 
-section{
+section {
     padding: 100px;
     min-height: 100vh;
     width: 100%;
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Add subtle animation effect */
+    transition: opacity 1s, transform 1s; /* Smooth effect */
+}
 
+section.show {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Reset position */
 }
 
 
@@ -192,7 +199,7 @@ section{
 }
 
 #projects{
-    padding: 50px ;
+    padding: 60px ;
     position: relative;
 
 }
@@ -200,7 +207,7 @@ section{
 #projects h1 {
     font-size: 4.5rem;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 
 }
@@ -255,10 +262,10 @@ section{
     backface-visibility: hidden;
 }
   
-  .flip-card-front {
+.flip-card-front {
     background-color: #bbb;
     color: black;
-  }
+}
   
 .flip-card-back {
     background-color: #2980b9;
@@ -266,11 +273,17 @@ section{
     transform: rotateY(180deg);
 }
 
+.other-proj h4{
+    margin-top: 30px;
+    font-size:20px ;
+    padding: 0 20px;
+}
+
 .card-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 25px;
 
 }
 
@@ -286,6 +299,11 @@ section{
 .card img{
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.2);
 }
 
 .card-content{
@@ -302,8 +320,19 @@ section{
     line-height: 1.3;
 }
 
+
+.card-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    color: #2980b9;
+}
+
 #contact {
-    padding: 50px 5%;
+    padding: 120px ;
+    position: relative;
 }
 
 
@@ -322,6 +351,7 @@ section{
     margin-bottom: 10px;
     
 }
+
 
 
 .contact-content a{
@@ -399,6 +429,10 @@ section{
 
     #projects h1 {
         font-size: 3rem;
+    }
+
+    .other-proj h4{
+        text-align: center;
     }
 
     .text-section p{
