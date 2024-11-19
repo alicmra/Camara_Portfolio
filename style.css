@@ -136,7 +136,7 @@ section.show {
     padding: 60px ;
     text-align: center;
     position: relative;
-    min-height: 130vh;
+    min-height: 125vh;
 }
 
 #skills::before {
@@ -524,8 +524,8 @@ footer p{
     }
 
     #skills::before {
-        min-width: 300px;
-        min-height: 140px;
+        min-width: 350px;
+        min-height: 150px;
     }
 
     .skill-card h3 {
