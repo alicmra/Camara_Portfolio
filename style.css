@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #101820;
+    background: #0d0a13;
     color: white;
     font-family: sans-serif;
     font-family: monospace;
@@ -34,7 +34,7 @@ body{
 }
 
 .logo span{
-    color:#FEE715;
+    color:#d757ba;
 }
 
 .navbar{
@@ -63,7 +63,7 @@ body{
 }
 
 .navbar a:hover {
-    color: #FEE715; 
+    color:#d757ba;
 }
 
 .hamburger{
@@ -95,7 +95,6 @@ section.show {
     transform: translateY(0);
 }
 
-
 #home{
     position: relative;
     height: 100vh; 
@@ -110,15 +109,17 @@ section.show {
     position: relative;
 }
 
-#home::before{
-    background-image: url('ho.jpg'); 
+#home::before {
+    background-image: url('home.jpg'); 
     background-size: cover;
+    background-position: center;
+    width: 100%;
     content: '';
     position: absolute;
     inset: 0;
-    opacity:5;
-
+    opacity: 0.7;
 }
+
 
 .home-content h1{
     font-size: 7rem;
@@ -193,7 +194,7 @@ section.show {
     margin-bottom: 10px;
     padding-top: 20px;
     text-decoration-line: underline;
-    text-decoration-color:#d757ba;
+    text-decoration-color:#2a52be;
     text-decoration-thickness: 5px;  
 } 
 
@@ -243,7 +244,7 @@ section.show {
 }
 
 .flip-card {
-    background-color: #101820;
+    background-color: #0d0a13;
     width: 600px;
     height: 400px;
     perspective: 1000px;
@@ -254,6 +255,7 @@ section.show {
     width: 100%;
     object-fit: cover; 
     max-width: 500px;
+    border-radius: 8px;
     vertical-align: middle;
 }
   
@@ -293,12 +295,11 @@ section.show {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 25px;
-
 }
 
 .card{
     width: 325px;
-    background-color: rgb(29, 30, 36);
+    background-color: #1d1727;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4 px rgba(0, 0, 0, 0.2);
@@ -348,7 +349,7 @@ section.show {
 label{
     display: inline-block;
     margin-top: 10px;
-    color: yellowgreen;
+    color: #288599;
     text-decoration: underline;
     cursor: pointer;
     font-weight: 600;
@@ -431,7 +432,7 @@ label:hover{
 }
 
 .contact-content a:hover {
-    background-color: #b1ddf1;
+    background-color: #accecf;
     color: #1c1c1c; 
 }
 
@@ -440,7 +441,7 @@ label:hover{
     max-width: 400px;
     object-fit: cover;
     vertical-align: middle;
-    border-radius: 8pc 0pc;
+    border-radius: 7pc 0pc;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -455,6 +456,14 @@ label:hover{
     align-items: center;
     justify-content: space-around;
     gap: 5rem;
+}
+
+footer{
+    min-height: 5vh;
+    background:black;
+    padding: 10px;
+    text-align: center; 
+    margin-top: 45px;
 }
 
 
@@ -479,9 +488,9 @@ label:hover{
     .navbar{
         position: fixed;
         right: -100%;
-        top: -10px;
+        top: -0.5px;
         flex-direction: column;
-        background-color:#101820;
+        background-color: #0d0a13;
         width: 50%;
         height: 100vh;
         justify-content: center;
@@ -505,6 +514,10 @@ label:hover{
 
     .home-content h3{
          font-size: 1.2rem;
+    }
+
+    #skills h1{
+        font-size: 3rem;
     }
 
     #skills::before {
@@ -533,12 +546,15 @@ label:hover{
         text-align: center;
     }
 
-    .contact-content h2 {
-        font-size: 2rem;
+    #contact h1{
+        font-size: 3rem;
     }
 
+    .contact-content{
+        font-size: 0.8rem;
+    }
     .contact-content a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 }
