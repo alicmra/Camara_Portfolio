@@ -227,8 +227,8 @@ section.show {
 
 }
 
-#projects .main-project {
-    padding: 0 15px;
+.main-project {
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -244,9 +244,8 @@ section.show {
 }
 
 .flip-card {
-    background-color: #0d0a13;
-    width: 600px;
-    height: 400px;
+    width: 580px;
+    height: 360px;
     perspective: 1000px;
 }
 
@@ -412,11 +411,6 @@ label:hover{
     
 }
 
-#contact p{
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-}
 
 .contact-content a{
     display: inline-block;
@@ -436,7 +430,7 @@ label:hover{
     color: #1c1c1c; 
 }
 
- .contact-image img{
+.contact-image img{
     width: 100%;
     max-width: 400px;
     object-fit: cover;
@@ -464,6 +458,10 @@ footer{
     padding: 10px;
     text-align: center; 
     margin-top: 45px;
+}
+
+footer p{
+    font-size: 12px;
 }
 
 
@@ -509,7 +507,7 @@ footer{
     }
         
     .home-content h1{
-        font-size: 3.2rem;
+        font-size: 3.1rem;
     }
 
     .home-content h3{
@@ -550,11 +548,8 @@ footer{
         font-size: 3rem;
     }
 
-    .contact-content{
-        font-size: 0.8rem;
-    }
     .contact-content a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
 }
