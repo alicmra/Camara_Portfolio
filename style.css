@@ -133,11 +133,10 @@ section.show {
 }
 
 #skills {
-    padding: 100px ;
+    padding: 60px ;
     text-align: center;
     position: relative;
     min-height: 130vh;
-
 }
 
 #skills::before {
