@@ -85,7 +85,7 @@ body{
 }
 
 section {
-    padding: 100px;
+    padding: 50px;
     min-height: 100vh;
     width: 100%;
     opacity: 0;
@@ -138,12 +138,29 @@ section.show {
     padding: 100px ;
     text-align: center;
     position: relative;
+    min-height: 130vh;
 
+}
+
+#skills::before {
+    content: "";
+    position: absolute;
+    margin-top: 100px;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 610px;
+    min-height: 300px;
+    background-image: url('cool-removebg-preview.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    z-index: -1; 
 }
 
 #skills h1 {
     font-size: 4.5rem;
-    margin-top: 50px;
+    margin-top: 35px;
     margin-bottom: 50px;
     text-transform: uppercase;
 
@@ -153,15 +170,15 @@ section.show {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .skill-card {
     background-color: transparent;
     padding: 30px;
     flex: 1;
-    min-width: 350px;
-    height: 290px;
+    min-width: 345px;
+    height: 295px;
     border: 1px solid white;
     transition: transform 0.3s ease-in-out;
     text-align: left;
@@ -441,6 +458,11 @@ section.show {
 
     .home-content h3{
          font-size: 1.5rem;
+    }
+
+    #skills::before {
+        min-width: 300px;
+        min-height: 140px;
     }
 
     .skill-card h3 {

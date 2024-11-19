@@ -11,11 +11,11 @@ const observer = new IntersectionObserver(
       });
     },
     {
-      threshold: 0.1, // Trigger when 50% of the element is visible
+      threshold: 0.1, 
     }
   );
 
-// Select all sections you want to observe
+
 const hiddenElements = document.querySelectorAll('section.animate');
 console.log('Elements being observed:', hiddenElements);
 hiddenElements.forEach((el) => observer.observe(el));
