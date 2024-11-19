@@ -137,7 +137,6 @@ section.show {
     text-align: center;
     position: relative;
     min-height: 130vh;
-    align-items: center;
 
 }
 
@@ -466,7 +465,7 @@ footer p{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 768px){
 
     .hamburger{
         display: block;
@@ -513,6 +512,12 @@ footer p{
 
     .home-content h3{
          font-size: 1.2rem;
+    }
+
+    .skill-card {       
+        padding: 20px;
+        min-width: 300px;
+        height: 290px;
     }
 
     #skills h1{
