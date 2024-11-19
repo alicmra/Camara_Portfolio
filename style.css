@@ -137,6 +137,7 @@ section.show {
     text-align: center;
     position: relative;
     min-height: 130vh;
+    align-items: center;
 
 }
 
@@ -465,7 +466,7 @@ footer p{
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 600px){
 
     .hamburger{
         display: block;
