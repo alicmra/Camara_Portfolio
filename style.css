@@ -40,7 +40,7 @@ body{
 .navbar{
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 30px;
     transition: 0.3s;
     flex-grow: 1;
 }
@@ -210,6 +210,27 @@ section.show {
     color: white;
     float: left;
     margin-right: 20px;
+}
+.experience{
+    padding: 25px;
+}
+.experience a{
+    margin-top: 25px;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.experience a:hover{
+    background-color: #accecf;
+    color: #1c1c1c; 
 }
 
 #projects{
@@ -392,7 +413,6 @@ label:hover{
     position: relative;
 }
 
-
 .contact-content {
     flex: 1; 
 }
@@ -405,11 +425,10 @@ label:hover{
 }
 
 #contact h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
     
 }
-
 
 .contact-content a{
     display: inline-block;
@@ -431,7 +450,7 @@ label:hover{
 
 .contact-image img{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     object-fit: cover;
     vertical-align: middle;
     border-radius: 7pc 0pc;
@@ -443,7 +462,7 @@ label:hover{
 }
 
 .contact-wrapper{
-    padding: 0 15px;
+    padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -516,7 +535,7 @@ footer p{
     .skill-card {       
         padding: 20px;
         min-width: 300px;
-        height: 290px;
+        height: 280px;
     }
 
     #skills h1{
@@ -524,16 +543,24 @@ footer p{
     }
 
     #skills::before {
-        min-width: 350px;
-        min-height: 150px;
+        min-width: 370px;
+        min-height: 180px;
     }
 
     .skill-card h3 {
         font-size: 0.9rem;
     }
 
+    .experience a{
+        font-size: 0.7rem;
+    }
+
     #projects h1 {
         font-size: 3rem;
+    }
+
+    .text-section p{
+        font-size: 0.8rem;
     }
 
     .other-proj h4{
@@ -554,7 +581,7 @@ footer p{
     }
 
     .contact-content a {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
 }
