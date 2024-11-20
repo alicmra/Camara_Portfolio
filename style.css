@@ -211,9 +211,11 @@ section.show {
     float: left;
     margin-right: 20px;
 }
+
 .experience{
     padding: 25px;
 }
+
 .experience a{
     margin-top: 25px;
     display: inline-block;
@@ -523,7 +525,7 @@ footer p{
     .navbar.active{
         right: 0; 
     }
-        
+      
     .home-content h1{
         font-size: 3.1rem;
     }
@@ -543,7 +545,7 @@ footer p{
     }
 
     #skills::before {
-        min-width: 370px;
+        min-width: 390px;
         min-height: 180px;
     }
 
